@@ -26,7 +26,7 @@ const Navbar = () => {
         
           <div className='flex md:flex-col md:items-center'>
           
-          <Link to='/login'>
+          <Link to='/account'>
             <button className='text-white uppercase py-2 px-2'>Mi Cuenta</button>
           </Link>  
 
