@@ -19,7 +19,7 @@ const Navbar = () => {
     <div className='flex items-center justify-between p-4 z-[100] w-full absolute'>
         
         <Link to='/'>
-          <h1 className='text-red-600 text-5xl py-2 font-bold cursor-pointer hover:text-red-500 md:text-3xl uppercase'>Qué ver</h1>
+          <h1 className='text-red-700 text-5xl py-2 font-bold cursor-pointer hover:text-red-500 md:text-3xl uppercase ease-out duration-700'>Qué ver</h1>
         </Link>
         
         {user?.email ? 
@@ -45,7 +45,7 @@ const Navbar = () => {
             </Link>  
 
             <Link to='/signup'>
-              <button className='bg-red-600 hover:bg-red-500 px-6 py-2 rounded-md cursor-pointer text-white uppercase md:px-4 '>Registrarse</button>
+              <button className='bg-red-700 hover:bg-red-500 px-6 py-2 rounded-md cursor-pointer ease-out duration-700 text-white uppercase md:px-4 '>Registrarse</button>
             </Link>  
   
           </div>

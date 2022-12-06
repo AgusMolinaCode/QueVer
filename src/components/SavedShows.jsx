@@ -5,6 +5,7 @@ import { db } from '../firebase'
 import { updateDoc, doc,onSnapshot } from 'firebase/firestore'
 import {AiOutlineClose} from 'react-icons/ai'
 
+
 const SavedShows = () => {
 
     const [movies,setMovies] = useState([])
@@ -48,11 +49,11 @@ const SavedShows = () => {
                 <div id={'slider'} className='w-full h-full overflow-x-scroll whitespace-nowrap scroll-smooth scrollbar-hide relative'>
                     {movies.map((item,id) => (
                         <div
-                            key={item.id}
+                            key={item?.id}
                             className=' inline-block cursor-pointer relative p-2'
                             >
                             <img
-                                className='w-full h-auto block'
+                                className='w-full h-auto block rounded-lg'
                                 src={`https://image.tmdb.org/t/p/w300/${item?.img}`}
                                 alt={item?.title}
                             />
